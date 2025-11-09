@@ -1,0 +1,227 @@
+/* --- Import Font & Reset --- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.text-center { text-align: center; }
+
+/* --- Layout Utama --- */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    overflow: hidden; 
+}
+
+/* --- Header --- */
+header {
+    background-color: #005068;
+    color: white;
+    padding: 30px 40px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+/* --- Navigasi (Catchy & Simple) --- */
+nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 0 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 3px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00a896; 
+    border-bottom-color: #00a896;
+}
+
+/* --- Konten Utama --- */
+main {
+    padding: 40px;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #005068;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* --- Tabel (Simple & Clean) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f1fcfb;
+}
+
+td.table-actions {
+    white-space: nowrap;
+}
+
+.table-actions .btn {
+    padding: 8px 15px;
+    font-size: 0.85em;
+    margin: 2px;
+}
+
+/* --- Form (Simple & Calm) --- */
+form {
+    background-color: #fdfdfd;
+    padding: 30px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #00a896;
+    box-shadow: 0 0 0 2px rgba(0, 168, 150, 0.1);
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    margin-top: 15px;
+}
+
+/* --- Tombol (Catchy) --- */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background-color: #00a896;
+    color: white;
+}
+.btn-success:hover { background-color: #007a6e; }
+
+.btn-warning {
+    background-color: #f39c12;
+    color: white;
+}
+.btn-warning:hover { background-color: #d35400; }
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-danger:hover { background-color: #c0392b; }
+
+
+/* --- Utility & Footer --- */
+.mt-20 {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f4f7f6;
+    color: #888;
+    text-align: center;
+    padding: 20px 40px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content-header {
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.content-header h2 {
+    font-size: 1.5em;
+    color: #005068;
+    margin: 0;
+}
